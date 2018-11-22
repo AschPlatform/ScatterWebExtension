@@ -19,6 +19,7 @@ export default class KeyPair {
     static blockchain(publicKey){
         if(publicKey.indexOf('EOS') !== -1) return Blockchains.EOS;
         if(publicKey.indexOf('0x') !== -1 && publicKey.length === 42) return Blockchains.ETH;
+        if (publicKey.length==64) return Blockchains.ASCH;
         return null;
     }
 
@@ -31,6 +32,8 @@ export default class KeyPair {
         case Blockchains.EOS: return this.privateKey.length > 51;
         // ETH private keys are 64 chars long
         case Blockchains.ETH: return this.privateKey.length > 64;
+        // ASCH private keys are 128 chars long
+        case Blockchains.ASCH: return this.privateKey.length > 128;
     }}
 
     /***

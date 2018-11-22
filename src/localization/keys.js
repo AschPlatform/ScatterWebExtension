@@ -189,6 +189,7 @@ export const PROMPT_WhitelistingContractAction = 'prompt_white_act';
 export const PROMPT_SelectAccount = 'prompt_sel_acc';
 export const PROMPT_ClaimIdentity = 'prompt_claim_id';
 
+export const PROMPT_CopyKeyPair = 'prompt_copy_key_pair';
 
 
 export const REQUEST_AddNetwork = 'req_add_net';
@@ -197,6 +198,7 @@ export const REQUEST_IdentityNoIdentities = 'req_id_no_ids';
 export const REQUEST_SignatureWhitelist = 'req_sig_white';
 export const REQUEST_ScatterIsLocked = 'req_scat_locked';
 export const REQUEST_UpdateVersion = 'req_updt_vers';
+
 
 
 

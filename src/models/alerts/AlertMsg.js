@@ -212,4 +212,11 @@ export default class AlertMsg {
         );
     }
 
+    static CopyKeyPair(){
+        return new AlertMsg(
+            AlertTypes.Prompt,
+            ...locale(LANG_KEYS.PROMPT_CopyKeyPair)
+        );
+    }
+
 }

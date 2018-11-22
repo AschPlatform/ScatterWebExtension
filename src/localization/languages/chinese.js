@@ -398,6 +398,13 @@ export default {
         'Put in the private key that matches the public key on file for your identity name.'
     ],
 
+    //2
+    [KEYS.PROMPT_CopyKeyPair]:[
+        '复制秘钥对',
+    
+        '复制成功秘钥对到粘贴板'
+    ],
+
     //3
     [KEYS.REQUEST_AddNetwork]:[
         /*{DOMAIN}*/ '想要将他们的网络添加到 Scatter。',

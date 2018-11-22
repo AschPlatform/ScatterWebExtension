@@ -43,7 +43,6 @@ export default class KeyPairService {
     static async generateKeyPair(keypair){
         const plugin = PluginRepository.plugin(keypair.blockchain);
         if(!plugin) return false;
-
         plugin.randomPrivateKey().then(privateKey => {
             const publicKey = plugin.privateToPublic(privateKey);
             if(plugin.validPublicKey(publicKey) && plugin.validPrivateKey(privateKey)){

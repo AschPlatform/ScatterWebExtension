@@ -1,7 +1,7 @@
 import * as PluginTypes from './PluginTypes';
 import EOS from './defaults/eos';
 import ETH from './defaults/eth';
-
+import ASCH from './defaults/asch';
 /***
  * Setting up for plugin based generators,
  * this will add more blockchain compatibility in the future.
@@ -17,6 +17,7 @@ class PluginRepositorySingleton {
     loadPlugins(){
         this.plugins.push(new EOS());
         this.plugins.push(new ETH());
+        this.plugins.push(new ASCH());
     }
 
     signatureProviders(){
